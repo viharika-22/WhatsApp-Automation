@@ -1,5 +1,5 @@
 from selenium import webdriver
-driver= webdriver.Chrome('C:/Users/Karthik Naidu/Downloads/chromedriver')
+driver= webdriver.Chrome('C:/Users/Viharika/Downloads/chromedriver')
 driver.get("https://web.whatsapp.com/")
 driver.maximize_window()
 name= input("contact").split()
