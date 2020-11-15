@@ -1,5 +1,5 @@
 from selenium import webdriver
-driver= webdriver.Chrome('C:/Users/Viharika/Downloads/chromedriver')
+driver= webdriver.Chrome('C:/Users/viharika/Downloads/chromedriver')
 driver.get("https://web.whatsapp.com/")
 driver.maximize_window()
 name= input("contact").split()
@@ -11,8 +11,3 @@ for i in name:
     message_box=driver.find_element_by_xpath("//*[@id='main']/footer/div[1]/div[2]/div/div[2]")
     message_box.send_keys(msg)
     driver.find_element_by_xpath("//*[@id='main']/footer/div[1]/div[3]/button").click()
-'''//span[@title="test"]
-//*[@id="main"]/footer/div[1]/div[2]/div/div[2]
-//*[@id="main"]/footer/div[1]/div[1]/div[3]/button
-//*[@id="main"]/footer/div[1]/div[3]/button
-//*[@id="main"]/footer/div[1]/div[3]/button'''
